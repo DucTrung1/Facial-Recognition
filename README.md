@@ -2,6 +2,9 @@
 
 ## Mục Tiêu và Mục Đích
 Ứng dụng này được phát triển để nhận diện khuôn mặt và mắt trong một hình ảnh. Nó cung cấp một công cụ hữu ích cho các ứng dụng liên quan đến nhận diện khuôn mặt.
+![image](https://github.com/DucTrung1/Facial-recognition/assets/148746928/26355538-577b-4577-80d0-38c671a9565d)
+![image](https://github.com/DucTrung1/Facial-recognition/assets/148746928/cf690735-deb5-4d7a-9514-c5143a60d9d4)
+
 
 ## Tính Năng Chính và Chức Năng
 - Nhận diện khuôn mặt trong hình ảnh.

@@ -7,6 +7,26 @@
 - Nhận diện khuôn mặt trong hình ảnh.
 - Vẽ hình chữ nhật xung quanh khuôn mặt đã tìm thấy.
 - Sử dụng nhiều bộ phát hiện mắt khác nhau.
+## Các bước ứng dụng nhận diện khuôn mặt
+Dưới đây là các bước cụ thể để ứng dụng đoạn mã nhận diện khuôn mặt và mắt sử dụng OpenCV:
+- Bước 1: Chuẩn bị môi trường:
+Đảm bảo bạn đã cài đặt OpenCV và các thư viện liên quan trong môi trường Python của bạn.
+- Bước 2: Chuẩn bị ảnh và tệp XML:
+Đặt ảnh bạn muốn xử lý vào đúng đường dẫn (image_path).
+Tải xuống tệp XML cho bộ phát hiện khuôn mặt và mắt hoặc sử dụng các tệp XML mẫu từ OpenCV.
+- Bước 3: Cấu hình tham số:
+Điều chỉnh các thông số như scale_factor, min_neighbors, và min_size tùy thuộc vào nhu cầu của bạn.
+- Bước 4: Gọi hàm detect_faces_and_eyes:
+Gọi hàm detect_faces_and_eyes với các tham số đã thiết lập và hình ảnh đầu vào.
+Hàm này sẽ thực hiện nhận diện khuôn mặt và mắt và vẽ hình chữ nhật xung quanh chúng.
+- Bước 5: Chạy chương trình:
+Chạy chương trình Python của bạn và kiểm tra kết quả được hiển thị trong cửa sổ "Khuôn mặt phát hiện".
+- Bước 6: Kiểm tra và điều chỉnh:
+Quan sát kết quả và kiểm tra số lượng khuôn mặt đã nhận diện.
+Nếu cần thiết, điều chỉnh các tham số để đạt được kết quả tốt hơn.
+- Bước 7: Tích hợp vào ứng dụng lớn hơn (nếu cần):
+Nếu bạn muốn tích hợp đoạn mã vào một ứng dụng lớn hơn, bạn có thể sử dụng hàm detect_faces_and_eyes trong phần xử lý ảnh của ứng dụng của bạn.
+
 
 ## Cách Sử Dụng
 1. Clone dự án từ GitHub về máy của bạn:
@@ -60,23 +80,4 @@
 
 4. **Kiểm Tra Kết Quả**:
 - Kết quả nhận diện khuôn mặt sẽ được hiển thị trong cửa sổ đồ họa, bằng việc vẽ hình vuông xung quanh khuôn mặt và đếm số khuôn mặt
-## Các bước ứng dụng nhận diện khuôn mặt
-Dưới đây là các bước cụ thể để ứng dụng đoạn mã nhận diện khuôn mặt và mắt sử dụng OpenCV:
-- Bước 1: Chuẩn bị môi trường:
-Đảm bảo bạn đã cài đặt OpenCV và các thư viện liên quan trong môi trường Python của bạn.
-- Bước 2: Chuẩn bị ảnh và tệp XML:
-Đặt ảnh bạn muốn xử lý vào đúng đường dẫn (image_path).
-Tải xuống tệp XML cho bộ phát hiện khuôn mặt và mắt hoặc sử dụng các tệp XML mẫu từ OpenCV.
-- Bước 3: Cấu hình tham số:
-Điều chỉnh các thông số như scale_factor, min_neighbors, và min_size tùy thuộc vào nhu cầu của bạn.
-- Bước 4: Gọi hàm detect_faces_and_eyes:
-Gọi hàm detect_faces_and_eyes với các tham số đã thiết lập và hình ảnh đầu vào.
-Hàm này sẽ thực hiện nhận diện khuôn mặt và mắt và vẽ hình chữ nhật xung quanh chúng.
-- Bước 5: Chạy chương trình:
-Chạy chương trình Python của bạn và kiểm tra kết quả được hiển thị trong cửa sổ "Khuôn mặt phát hiện".
-- Bước 6: Kiểm tra và điều chỉnh:
-Quan sát kết quả và kiểm tra số lượng khuôn mặt đã nhận diện.
-Nếu cần thiết, điều chỉnh các tham số để đạt được kết quả tốt hơn.
-- Bước 7: Tích hợp vào ứng dụng lớn hơn (nếu cần):
-Nếu bạn muốn tích hợp đoạn mã vào một ứng dụng lớn hơn, bạn có thể sử dụng hàm detect_faces_and_eyes trong phần xử lý ảnh của ứng dụng của bạn.
 
